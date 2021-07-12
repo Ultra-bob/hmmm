@@ -1,18 +1,12 @@
 
 package net.mcreator.hmmm.enchantment;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.enchantment.EnchantmentType;
-import net.minecraft.enchantment.Enchantment;
-
-import net.mcreator.hmmm.HmmmModElements;
-
 @HmmmModElements.ModElement.Tag
 public class PickpocketEnchantment extends HmmmModElements.ModElement {
+
 	@ObjectHolder("hmmm:pickpocket")
 	public static final Enchantment enchantment = null;
+
 	public PickpocketEnchantment(HmmmModElements instance) {
 		super(instance, 6);
 	}
@@ -21,7 +15,9 @@ public class PickpocketEnchantment extends HmmmModElements.ModElement {
 	public void initElements() {
 		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("pickpocket"));
 	}
+
 	public static class CustomEnchantment extends Enchantment {
+
 		public CustomEnchantment(EquipmentSlotType... slots) {
 			super(Enchantment.Rarity.COMMON, EnchantmentType.WEAPON, slots);
 		}
@@ -50,5 +46,7 @@ public class PickpocketEnchantment extends HmmmModElements.ModElement {
 		public boolean isAllowedOnBooks() {
 			return true;
 		}
+
 	}
+
 }

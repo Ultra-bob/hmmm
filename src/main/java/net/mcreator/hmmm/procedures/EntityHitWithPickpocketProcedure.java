@@ -1,25 +1,7 @@
 package net.mcreator.hmmm.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.living.LivingDeathEvent;
-
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.item.ItemEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.enchantment.EnchantmentHelper;
-
-import net.mcreator.hmmm.enchantment.PickpocketEnchantment;
-import net.mcreator.hmmm.HmmmMod;
-
-import java.util.Map;
-import java.util.HashMap;
-
 public class EntityHitWithPickpocketProcedure {
+
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -43,6 +25,7 @@ public class EntityHitWithPickpocketProcedure {
 			}
 		}
 	}
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
@@ -69,11 +52,13 @@ public class EntityHitWithPickpocketProcedure {
 				HmmmMod.LOGGER.warn("Failed to load dependency world for procedure EntityHitWithPickpocket!");
 			return;
 		}
+
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		if ((Math.random() < 0.3)) {
 			for (int index0 = 0; index0 < (int) (Math.ceil((Math.random() * (EnchantmentHelper.getEnchantmentLevel(PickpocketEnchantment.enchantment,
 					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))))); index0++) {
@@ -85,4 +70,5 @@ public class EntityHitWithPickpocketProcedure {
 			}
 		}
 	}
+
 }

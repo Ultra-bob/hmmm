@@ -154,17 +154,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "zombie_amulet"
+    },
+    {
+      "name": "Rocketleg",
+      "type": "mob",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocketleg"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "enchantment.hmmm.pickpocket": "Pickpocket",
       "item.hmmm.chocolate_bar": "Chocolate Bar",
       "item.hmmm.villager_head": "Villager Head",
-      "item.hmmm.tomato": "Tomato",
-      "item.hmmm.zombie_amulet": "Zombie Amulet"
+      "item.hmmm.tomato": "Tomato"
     }
   },
   "foldersRoot": {

@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "fire1",
+        "1": "rocket_1",
+        "2": "villager-1.png_1",
+        "missing": "villager-1.png_1"
+      },
+      "name": "default"
+    }
+  }
+}
