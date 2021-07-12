@@ -61,6 +61,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Tomato",
+      "type": "gun",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tomato"
     }
   ],
   "variable_elements": [],
@@ -68,7 +77,8 @@
   "language_map": {
     "en_us": {
       "item.hmmm.chocolate_bar": "Chocolate Bar",
-      "item.hmmm.villager_head": "Villager Head"
+      "item.hmmm.villager_head": "Villager Head",
+      "item.hmmm.tomato": "Tomato"
     }
   },
   "foldersRoot": {
