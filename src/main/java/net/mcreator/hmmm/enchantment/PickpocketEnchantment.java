@@ -14,7 +14,7 @@ public class PickpocketEnchantment extends HmmmModElements.ModElement {
 	@ObjectHolder("hmmm:pickpocket")
 	public static final Enchantment enchantment = null;
 	public PickpocketEnchantment(HmmmModElements instance) {
-		super(instance, 3);
+		super(instance, 6);
 	}
 
 	@Override
@@ -23,7 +23,7 @@ public class PickpocketEnchantment extends HmmmModElements.ModElement {
 	}
 	public static class CustomEnchantment extends Enchantment {
 		public CustomEnchantment(EquipmentSlotType... slots) {
-			super(Enchantment.Rarity.RARE, EnchantmentType.WEAPON, slots);
+			super(Enchantment.Rarity.COMMON, EnchantmentType.WEAPON, slots);
 		}
 
 		@Override
@@ -33,7 +33,7 @@ public class PickpocketEnchantment extends HmmmModElements.ModElement {
 
 		@Override
 		public int getMaxLevel() {
-			return 3;
+			return 5;
 		}
 
 		@Override
