@@ -2,9 +2,9 @@
   "_fv": 21,
   "_type": "item",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "villager",
-    "customModelName": "Normal",
+    "customModelName": "villagerhead:default",
     "name": "Villager Head",
     "rarity": "EPIC",
     "creativeTab": {

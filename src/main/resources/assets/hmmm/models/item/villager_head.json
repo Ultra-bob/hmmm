@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "hmmm:custom/villagerhead",
   "textures": {
-    "layer0": "hmmm:items/villager"
+    "0": "hmmm:blocks/",
+    "particle": "hmmm:items/villager"
   }
 }

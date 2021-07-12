@@ -24,16 +24,16 @@ public class VillagerHeadRightClickedInAirProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity) {
 			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).inventory.armorInventory.set((int) 0, new ItemStack(VillagerHeadItem.block, (int) (1)));
+				((PlayerEntity) entity).inventory.armorInventory.set((int) 3, new ItemStack(VillagerHeadItem.block, (int) (1)));
 			else
-				((LivingEntity) entity).setItemStackToSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 0),
+				((LivingEntity) entity).setItemStackToSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3),
 						new ItemStack(VillagerHeadItem.block, (int) (1)));
 			if (entity instanceof ServerPlayerEntity)
 				((ServerPlayerEntity) entity).inventory.markDirty();
 		}
 		if (entity instanceof PlayerEntity) {
 			ItemStack _setstack = ((entity instanceof LivingEntity)
-					? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 0))
+					? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
 					: ItemStack.EMPTY);
 			_setstack.setCount((int) 1);
 			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
