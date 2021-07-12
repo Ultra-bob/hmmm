@@ -4,9 +4,9 @@
   "definition": {
     "name": "Pickpocket",
     "type": "WEAPON",
-    "rarity": "RARE",
+    "rarity": "COMMON",
     "minLevel": 1,
-    "maxLevel": 3,
+    "maxLevel": 5,
     "damageModifier": 0,
     "compatibleEnchantments": [],
     "compatibleItems": [],

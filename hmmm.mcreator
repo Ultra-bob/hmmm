@@ -79,14 +79,54 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rocketleg"
+    },
+    {
+      "name": "EntityHitWithPickpocket",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_hit_with_pickpocket",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pickpocket",
+      "type": "enchantment",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pickpocket"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "entity.hmmm.rocketleg": "Rocketleg",
-      "item.hmmm.rocketleg_spawn_egg": "Rocketleg Spawn Egg",
       "item.hmmm.chocolate_bar": "Chocolate Bar",
       "item.hmmm.villager_head": "Villager Head",
       "item.hmmm.tomato": "Tomato"
