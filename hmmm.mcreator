@@ -35,13 +35,40 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "big_burd"
+    },
+    {
+      "name": "VillagerHead",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "villager_head"
+    },
+    {
+      "name": "VillagerHeadRightClickedInAir",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "villager_head_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.hmmm.chocolate_bar": "Chocolate Bar"
+      "item.hmmm.chocolate_bar": "Chocolate Bar",
+      "item.hmmm.villager_head": "Villager Head"
     }
   },
   "foldersRoot": {

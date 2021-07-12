@@ -1,0 +1,38 @@
+{
+  "_fv": 21,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "villager",
+    "customModelName": "Normal",
+    "name": "Villager Head",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "stackSize": 1,
+    "enchantability": 3,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 120,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Its a Villager Head... Why don't you wear it?"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 1,
+    "onRightClickedInAir": {
+      "name": "VillagerHeadRightClickedInAir"
+    }
+  }
+}
