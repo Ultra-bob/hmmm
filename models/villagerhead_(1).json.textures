@@ -2,8 +2,8 @@
   "mappings": {
     "default": {
       "map": {
-        "1": "",
-        "2": ""
+        "1": "villager-1.png",
+        "2": "villager-1.png_1"
       },
       "name": "default"
     }
