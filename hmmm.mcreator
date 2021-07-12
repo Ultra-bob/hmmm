@@ -26,6 +26,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "chocolate_bar"
+    },
+    {
+      "name": "BigBurd",
+      "type": "painting",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "big_burd"
     }
   ],
   "variable_elements": [],
