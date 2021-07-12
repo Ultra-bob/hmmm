@@ -1,8 +1,8 @@
 {
   "parent": "hmmm:custom/villagerhead_(1)",
   "textures": {
-    "1": "hmmm:blocks/",
-    "2": "hmmm:blocks/",
+    "1": "hmmm:blocks/villager-1.png",
+    "2": "hmmm:blocks/villager-1.png_1",
     "particle": "hmmm:items/villager"
   }
 }
