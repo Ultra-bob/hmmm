@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 1,
     "texture": "villager",
-    "customModelName": "villagerhead:default",
+    "customModelName": "villagerhead_(1):default",
     "name": "Villager Head",
     "rarity": "EPIC",
     "creativeTab": {
